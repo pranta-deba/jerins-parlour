@@ -1,9 +1,11 @@
 import { createBrowserRouter } from "react-router-dom";
+import Root from "../Layouts/Root";
+import Dashboard from "../Layouts/Dashboard";
 
 export const router = createBrowserRouter([
   {
     path: "/",
-    element: <div>Hello world!</div>,
+    element: <Root />,
     children: [
       {
         path: "",
@@ -25,7 +27,7 @@ export const router = createBrowserRouter([
   },
   {
     path: "/dashboard",
-    element: <div>dashboard</div>,
+    element: <Dashboard />,
     children: [
       // for user
       {

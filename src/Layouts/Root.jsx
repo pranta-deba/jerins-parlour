@@ -3,11 +3,13 @@ import { Outlet } from "react-router-dom";
 const Root = () => {
     return (
         <div>
-            <div>navbar</div>
+            <div className="text-5xl bg-green-400">navbar</div>
 
-            <Outlet />
+            <main className="min-h-[calc(100vh-100px)]">
+                <Outlet />
+            </main>
 
-            <div>footer</div>
+            <div className="text-5xl bg-blue-400">footer</div>
         </div>
     );
 };
